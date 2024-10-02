@@ -1,5 +1,5 @@
 services:
-  mqtt-broker:
+  broker:
     image: eclipse-mosquitto
     ports:
       - "1883:1883"
