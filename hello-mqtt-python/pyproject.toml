@@ -1,0 +1,30 @@
+[project]
+name = "hello-mqtt-python"
+version = "0.1.0"
+description = "Add your description here"
+authors = [{ name = "Stig B. Dørmænen", email = "stigbd@gmail.com" }]
+dependencies = ["click~=8.1.7", "paho-mqtt~=2.1.0"]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+"hello-mqtt-python" = "hello_mqtt_python:cli"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pyright~=1.1.383",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402", "F401"]
+
+[tool.rye.scripts]
+fmt = "rye fmt"
+lint = "rye lint --fix"
+check = "pyright"
+all = { chain = ["fmt", "lint", "check"] }
