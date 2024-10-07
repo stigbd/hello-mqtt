@@ -40,5 +40,12 @@ To stop the subscriber, press `Ctrl+C`.
 In a different terminal, run the following command to publish a message to the `hello/world` topic:
 
 ```bash
-% rye run hello-mqtt-python publish -t "hello/world" -m "Hello world"
+% rye run hello-mqtt-python publish -t "hello/world" 
+Mouse moved to (3980, 1311)
+Mouse moved to (3980, 1311)
+Mouse moved to (3979, 1311)
+Mouse moved to (3978, 1311)
+Mouse moved to (3979, 1311)
+Mouse moved to (3979, 1313)
+Pressed at (3979, 1313) with Button.left-m "Hello world"
 ```

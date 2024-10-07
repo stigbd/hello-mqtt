@@ -12,10 +12,19 @@
 -e file:.
 click==8.1.7
     # via hello-mqtt-python
+evdev==1.7.1
+    # via pynput
 nodeenv==1.9.1
     # via pyright
 paho-mqtt==2.1.0
     # via hello-mqtt-python
+pynput==1.7.7
+    # via hello-mqtt-python
 pyright==1.1.383
+python-xlib==0.33
+    # via pynput
+six==1.16.0
+    # via pynput
+    # via python-xlib
 typing-extensions==4.12.2
     # via pyright

@@ -6,8 +6,4 @@ This is a simple example of how to use the MQTT protocol with Python.
 
 ## Start the MQTT broker
 
-To start the MQTT broker, run the following command:
-
-```bash
-% docker-compose up
-```
+See the this [README.md](mqtt5/README.md) file for more information.
