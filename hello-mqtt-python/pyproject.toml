@@ -56,6 +56,10 @@ ignore = [
     "FBT",  # Don't care about booleans as positional arguments in tests, e.g. via @pytest.mark.parametrize()
 ]
 
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
 [tool.rye.scripts]
 fmt = "rye fmt"
 lint = "rye lint --fix"
